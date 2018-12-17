@@ -1,29 +1,13 @@
 body {
-  background-color: #ffffff;
-  color:#b2bec3;
+  background-color: #fff;
+  color: #222;
 }
 
 h1 {
-  color: #636e72
+  color: #468
 }
 
-/** Desktop **/
-
-@media screen and (min-width: 40em) {
-
-  body {
-    background-color: #808080;
-  }
-
-}
-
-/** Dark Mode **/
-
-@media (prefers-color-scheme: dark) {
-
-  body {
-    color: #ddd;
-    background-color: #222;
-  }
-
+main {
+  max-width: 50em;
+  margin: 0 auto;
 }
