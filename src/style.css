@@ -11,3 +11,23 @@ main {
   max-width: 50em;
   margin: 0 auto;
 }
+
+.flex-container{
+
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  margin-left: 10rem
+}
+
+
+.colulmn {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: minmax(200px, 1fr) 200px 200px;
+  background-color: #fff;
+  color: #444;
+}
+
