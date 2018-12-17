@@ -16,3 +16,14 @@ h1 {
   }
 
 }
+
+/** Dark Mode **/
+
+@media (prefers-color-scheme: dark) {
+
+  body {
+    color: #ddd;
+    background-color: #222;
+  }
+
+}
