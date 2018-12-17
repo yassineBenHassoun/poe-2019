@@ -1,8 +1,18 @@
 body {
-  background-color: #ececec;
+  background-color: #ffffff;
   color:#b2bec3;
 }
 
 h1 {
   color: #636e72
+}
+
+/** Desktop **/
+
+@media screen and (min-width: 40em) {
+
+  body {
+    background-color: #808080;
+  }
+
 }
