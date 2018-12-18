@@ -48,3 +48,11 @@ main > * {
     flex: 0 0 30%;
   }
 }
+
+.img-article {
+  width: 100%;
+  padding-top: 56.25%;
+  background-image: url('img/gow.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
