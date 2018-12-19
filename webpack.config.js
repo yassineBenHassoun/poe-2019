@@ -15,6 +15,7 @@ module.exports = {
       template: './src/second.html'
     })
   ],
+  devtool: 'source-map',
   module: {
     rules: [
       {
