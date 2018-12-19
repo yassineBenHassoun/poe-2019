@@ -5,7 +5,15 @@ module.exports = {
   entry: './src/index.js',
   mode: 'development',
   plugins: [
-    new HtmlWebpackPlugin({template: './src/index.html'})
+    new HtmlWebpackPlugin({template: './src/index.html'}),
+    new HtmlWebpackPlugin({
+      filename: 'partial.html',
+      template: './src/partial.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'second.html',
+      template: './src/second.html'
+    })
   ],
   module: {
     rules: [
