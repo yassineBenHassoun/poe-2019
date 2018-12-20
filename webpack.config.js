@@ -1,12 +1,12 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   entry: './src/index.js',
   mode: 'development',
   plugins: [
-    new HtmlWebpackPlugin({template: './src/index.html'}),
+    new HtmlWebpackPlugin({ template: './src/index.html' }),
     new HtmlWebpackPlugin({
       filename: 'partial.html',
       template: './src/partial.html'
@@ -32,7 +32,7 @@ module.exports = {
             }
           },
           'css-loader'
-        ],
+        ]
       },
       {
         test: /\.scss$/,
@@ -47,11 +47,11 @@ module.exports = {
           },
           'css-loader',
           'sass-loader'
-        ],
-      },
-    ],
+        ]
+      }
+    ]
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-  },
-};
+    contentBase: path.join(__dirname, 'dist')
+  }
+}
