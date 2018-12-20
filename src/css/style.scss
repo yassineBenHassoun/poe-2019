@@ -1,4 +1,35 @@
-@import './settings/_color.scss';
+// Design
+//
+// Design rules.
+//
+// Weight: 1
+//
+// Style guide: Design
+
+@import './settings/color';
+
+
+
+
+
+
+// Elements
+//
+// Every UI elements.
+//
+// Weight: 2
+//
+// Style guide: Elements
+@import './elements/btn';
+
+// Components
+//
+// Blocks and components.
+//
+// Weight: 3
+//
+// Style guide: Components
+@import './components/alert';
 
 body {
   background-color: $color-light;
@@ -22,6 +53,16 @@ main {
   }
 }
 
+@media screen and (min-width: 35em) {
+  article {
+    flex: 0 0 60%;
+  }
+
+  aside {
+    flex: 0 0 30%;
+  }
+}
+
 nav {
   background-color:$color-light-grey;
 
@@ -39,18 +80,8 @@ nav {
   }
 }
 
-@media screen and (min-width: 35em) {
-  article {
-    flex: 0 0 60%;
-
-    img {
-      width: 100%;
-    }
-  }
-
-  aside {
-    flex: 0 0 30%;
-  }
+article img {
+  width: 100%;
 }
 
 .youtube-video {

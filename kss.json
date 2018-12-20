@@ -10,6 +10,6 @@
   ],
   "title": "Style Guide",
   "verbose": false,
-  "homepage": "README.md",
+  "homepage": "./README.md",
   "builder": "builder/twig"
 }
