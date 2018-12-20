@@ -1,15 +1,12 @@
-$light: #eee;
-$light-grey: #ddd;
-$primary: #468;
-$dark: #222;
+@import './settings/_color.scss';
 
 body {
-  background-color: $light;
-  color: $dark;
+  background-color: $color-light;
+  color: $color-dark;
 }
 
 h1 {
-  color: $primary;
+  color: $color-primary;
 }
 
 main {
@@ -26,7 +23,7 @@ main {
 }
 
 nav {
-  background-color:$light-grey;
+  background-color:$color-light-grey;
 
   ul {
     display: flex;
@@ -73,5 +70,5 @@ nav {
 .icon {
   width: 125px;
   height: 125px;
-  background: $light;
+  background: $color-light;
 }
