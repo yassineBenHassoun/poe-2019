@@ -1,22 +1,26 @@
 // Desing
 //
-// Stule guide: Design
+// Stule rules
+//
+// weight: 1
+
+@import'./settings/color.scss';
 
 //Elements
 //
+//Every ui elements
 //
-// Style guide Elements
-@import('./settings/color.scss');
-//Elements
-//
-//
+//weight : 2
 // Style guide Compenents
-@import('./compenents/alert.scss');
-//Elements
+@import'./elements/btn.scss';
+//Compenents
 //
+//Block and compenents
 //
+//weight: 3
 // Style guide Compenents
-@import('./elements/btn.scss');
+@import'./compenents/alert.scss';
+
 
 body {
   background-color: $light;
