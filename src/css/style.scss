@@ -1,12 +1,30 @@
-@import './settings/_color.scss';
+// Desing
+//
+// Stule guide: Design
+
+//Elements
+//
+//
+// Style guide Elements
+@import('./settings/color.scss');
+//Elements
+//
+//
+// Style guide Compenents
+@import('./compenents/alert.scss');
+//Elements
+//
+//
+// Style guide Compenents
+@import('./elements/btn.scss');
 
 body {
-  background-color: $color-light;
-  color: $color-dark;
+  background-color: $light;
+  color: $dark;
 }
 
 h1 {
-  color: $color-primary;
+  color: $primary;
 }
 
 main {
@@ -23,7 +41,7 @@ main {
 }
 
 nav {
-  background-color:$color-light-grey;
+  background-color:$light-grey;
 
   ul {
     display: flex;
@@ -70,5 +88,5 @@ nav {
 .icon {
   width: 125px;
   height: 125px;
-  background: $color-light;
+  background: $light;
 }
