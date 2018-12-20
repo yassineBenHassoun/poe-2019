@@ -1,11 +1,11 @@
 require('./style.scss');
-console.log('Hello World');
 
 
-const responsiveNav = require('responsive-nav');
+
+//const responsiveNav = require('responsive-nav');
 require('responsive-nav/client/dist/styles/responsive-nav.css');
 
-const nav = responsiveNav('nav');
+
 
 const mq = window.matchMedia('(min-width: 35em)');
 
@@ -25,13 +25,13 @@ const loadPartial = () => {
 
   return fetch(url, options)
     .then((response) => {
-        if (response.ok) {
-            return response;
-        }
+      if (response.ok) {
+        return response;
+      }
 
-        const error = new Error(response.statusText);
-        error.response = response;
-        throw error;
+      const error = new Error(response.statusText);
+      error.response = response;
+      throw error;
     })
     .then((response) => {
       response.text().then((text) => {
@@ -39,10 +39,9 @@ const loadPartial = () => {
         link.parentNode.removeChild(link);
       });
     });
-}
+};
 
 
 if (mq.matches) {
   loadPartial();
 }
-
