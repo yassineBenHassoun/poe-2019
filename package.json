@@ -31,11 +31,16 @@
     "kss": "^3.0.0-beta.23",
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
     "responsive-nav": "^1.0.39",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.27.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.4.3",
+    "postcss-cli": "^6.1.0"
   }
 }
